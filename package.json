@@ -2,7 +2,7 @@
   "name" : "angular-timezones",
   "description" : "Timezones for AngularJS",
   "version" : "0.3.8",
-  "homepage" : "https://github.com/michaelahlers/angular-timezones",
+  "homepage" : "https://github.com/CamaroSS/angular-timezones",
   "author" : {
     "name" : "Michael Ahlers",
     "email" : "michael@ahlers.co"
@@ -10,7 +10,7 @@
 
   "repository" : {
     "type" : "git",
-    "url" : "git@github.com:michaelahlers/angular-timezones.git"
+    "url" : "https://github.com/CamaroSS/angular-timezones.git"
   },
 
   "dependencies" : {
