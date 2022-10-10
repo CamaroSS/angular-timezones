@@ -15,7 +15,7 @@ This project will not receive additional features, bug fixes, or any other maint
 ```json
 {
   "dependencies" : {
-    "angular-timezones" : "git@github.com:michaelahlers/angular-timezones.git#0.3.8"
+    "angular-timezones" : "https://github.com/CamaroSS/angular-timezones.git#master"
   }
 }
 ```
