@@ -2,7 +2,7 @@
 
   var angular = root.angular
     , timezoneJS = root.timezoneJS
-    , jstz = root.jstz
+    , jstz = root.jstz;
 
   var toExtendedNative = function (wrapped) {
     /* Tricks the isDate method in Angular into treating these objects like it
@@ -12,9 +12,9 @@
       native[key] = wrapped[key]
     }
     return native
-  }
+  };
 
-  var module = angular.module('Timezones', [])
+  var module = angular.module('Timezones', []);
 
   module.config(function () {
     timezoneJS.fromLocalString = function (str, tz) {
@@ -36,12 +36,12 @@
     }
   })
 
-  module.constant('$timezones.definitions.location', '/tz/data')
+  module.constant('$timezones.definitions.location', '/tz/data');
 
   module.run(['$timezones.definitions.location', '$log', function (location, $log) {
     timezoneJS.timezone.zoneFileBasePath = location
     timezoneJS.timezone.init({ async : false })
-  }])
+  }]);
 
   module.factory('$timezones', function () {
     var resolve = function (timezone, reference) {
@@ -155,7 +155,7 @@
       }
 
     }
-  })
+  });
 
   module.filter('tzAlign', ['$timezones', function ($timezones) {
     return function (date, timezone) {
@@ -189,6 +189,6 @@
 
       return alignedDate
     }
-  }])
+  }]);
 
-})(this)
+})(this);
